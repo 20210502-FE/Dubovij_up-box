@@ -1,0 +1,59 @@
+.social{
+    background-color: $color-zircon;
+    text-align: center;
+    
+    @include tablet{
+        padding: 100px 50px 130px;
+    }
+
+    &__title{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__btn-backgraund{
+        margin: 18px auto 100px auto;
+        width: 312px;
+        font-size: 16px;
+        letter-spacing: 0.12em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @include tablet{
+            margin-top: -17px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pictures{
+    text-align: center;
+    
+    &__column{
+        padding: 0 17px;
+        margin: auto;
+    }
+
+    &__wrap{
+        max-width: 312px;
+        text-align: start;
+    }
+
+    &__img{
+        width: 312px;
+        height: 431px;
+    }
+
+    &__content{
+        font-family: $font-sans;
+        font-size: 22px;
+        line-height: 22.5px;
+        margin: 32px 0 93px 0;
+
+        @include tablet{
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.01em;
+        }
+    }
+}

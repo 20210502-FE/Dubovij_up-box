@@ -1,0 +1,229 @@
+.plan{
+    margin-top: 90px;
+
+    &__subtitle{
+        margin-bottom: 80px;
+    }
+
+    &__content{
+        margin-bottom: 90px;
+
+        @include desktop{
+            font-size: 18px;
+        }
+    }
+}
+
+.box{
+
+    &__wrap{
+        width: 100%;
+    }
+
+    &__column{
+        border: 1px solid $color-downy;
+        margin-bottom: 19px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 348px;
+        height: 188px;
+        text-align: center;
+
+        @include tablet{
+            width: 305px;
+        }
+
+        &_blue{
+            background-image: url(../assets/images/plan-1.png);
+
+            @include desktop{
+                width: 575px;   
+                height: 291px;
+                justify-content: center;
+            }
+        }
+        &_green{
+            background-image: url(../assets/images/plan-2.png);
+
+            @include desktop{
+                width: 575px;   
+                height: 291px;
+                justify-content: center;
+            }
+        }
+    }
+    &__title{
+        font-family: $font-serif-text;
+        font-size: 30px;
+        margin-top: 27px;
+        font-weight: 400;
+    }
+    &__cost{
+        font-family: $font-sans;
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: 11px;
+    }
+  
+}
+
+.works{
+    text-align: center;
+
+    &__column-center{
+        margin-top: 211px;
+        margin-bottom: 114px;
+    }
+
+    &__column{
+
+        @include tablet{     
+            padding: 0 70px;
+        }
+
+        @include desktop{
+            padding-left: 250px;
+        }
+    }
+
+    &__left{
+        text-align: center;
+        width: 275px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    &__right{
+        padding: 43px 39px 0 54px;
+
+        @include tablet{
+            max-width: 400px;
+            text-align: left;
+        }
+
+        @include desktop{
+            max-width: 400px;
+            text-align: left;
+        }
+    }
+
+    @include tablet{
+
+        &__right-center{
+            margin-top: -4px;
+            margin-left: 155px;
+        }
+    }
+
+    &__inner-title{
+        margin-bottom: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+    &__img{
+        width: 327px;
+
+        @include tablet{
+            width: 257px;
+        }
+    }
+
+    &__img-center1{
+        width: 345px;
+    }
+
+    &__img-center2{
+        position: absolute;
+        width: 97px;
+        height: 143px;
+        top: -141px;
+        left: 51px;
+
+        @include tablet{
+            top: 172px;
+            left: -49px;
+        }
+    }
+
+    
+    &__img-center3{
+        position: absolute;
+        width: 167px;
+        height: 169px;
+        left: 1px;
+        bottom: -19px;
+        z-index: -1;
+    }
+
+    &__img-center4{
+        display: none;
+
+        @include tablet{
+            display: block;
+            position: absolute;
+            top: -44px;
+            right: -150px;
+            width: 254px;
+            height: 204px;
+            z-index: -1;
+        }
+    }
+
+    &__img-bottom1{
+        width: 334px;
+
+        @include tablet{
+            width: 260px;
+        }
+    }
+
+    &__img-bottom2{
+        position: absolute;
+        width: 97px;
+        height: 143px;
+        top: 62px;
+        left: 34px;
+
+        @include tablet{
+           top: 38px;
+           left: 21px;
+        }
+    }
+
+    &__img-bottom3{
+        position: absolute;
+        width: 155px;
+        height: 174px;
+        right: -102px;
+        bottom: -2px;
+        z-index: -1;
+
+        @include tablet{
+          display: none;
+        }
+    }
+
+    &__img-bottom4{
+        display: none;
+        @include tablet{
+            display: block;
+            position: absolute;
+            width: 155px;
+            height: 138px;
+            bottom: 5px;
+            right: -53px;
+            z-index: -1;
+        }
+        
+    }
+
+    &__btn-bordr{
+        width: 282px;
+        margin-top: 131px;
+        margin-bottom: 138px;
+        @include tablet{
+            width: 234px;
+        }
+    }
+}

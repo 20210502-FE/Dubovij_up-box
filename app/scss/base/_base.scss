@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    color: $color-black;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.wrap-content{
+    width: calc(100% - 460px);
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+
+    &__column{
+        flex-direction: column;
+    }
+
+    &__space-between{
+        justify-content: space-between;
+    }
+
+    &__space-around{
+        justify-content: space-around;
+    }
+    
+    &__wrap{
+        flex-wrap: wrap;
+    }
+
+    &__justify-content-center{
+        justify-content: center;
+    }
+
+    &__align-items-center{
+        align-items: center;
+    }
+}
+
+.relative{
+position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.wrap-content{
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding-top: 16px;
+}
+
+.logo{
+   height: 56px;
+   width: 56px; 
+}
+
+.logo1{
+    width: 132.5px;
+    height: 38px;
+}
+
+.title{
+    font-family: $font-serif-text;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56px;
+    @include tablet{
+        font-size: 42px;
+    }
+}
+
+.content{
+    font-family: $font-sans;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+
+    @include tablet{
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 18px;
+    }
+
+    &_14{
+        font-size: 14px;
+    }
+}
+
+.subtitle{
+    font-family: $font-serif-text;
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+
+    &::after{
+        content: url(../assets/images/underline.png);
+        position: absolute;
+        top: 35px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 243px;
+        height: 16px;
+    }
+
+    &_line{
+        &::after{
+        content: url(../assets/images/underline1.png);
+        position: absolute;
+        top: 35px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 243px;
+        height: 16px;
+        }
+    }
+}
+
+.inner-title{
+    font-family: $font-serif-text;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+
+    @include tablet{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    &_width70{
+        width: 70%;
+    }
+    
+    &_width50{
+        width: 50%;
+    }
+}
+
+.inner-content{
+    font-family: $font-sans;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+
+    @include tablet{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+    }
+}

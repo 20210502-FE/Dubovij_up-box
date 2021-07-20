@@ -1,0 +1,52 @@
+.footer{
+    background-color: $color-gallery;
+    margin: 0 13px 19px 13px;
+    border-top: 2px solid $color-mercury;
+    padding: 21px 31px 36px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    @include tablet{
+        padding: 30px 77px 21px 62px;
+    }
+
+    &__content{
+        font-family: $font-sans;
+        font-weight: 500;
+        font-size: 14px;
+        color: $color-black;
+        letter-spacing: 00.12em;
+        margin-bottom: 13px;
+
+
+        @include tablet{
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.12em;
+        }
+
+        &_12{
+            font-size: 12px;
+
+            @include tablet{
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.12em;
+            }
+
+            @include desktop{
+                display: none;
+            }
+        }
+    }
+
+    &__wrap{
+        width: 42%;
+
+        @include desktop{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+    }
+}
