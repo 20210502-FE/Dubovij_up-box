@@ -1,0 +1,67 @@
+.house{
+    background-color: $color-zircon;
+
+    @include desktop{
+        height: 517px;
+    }
+
+    &__title{
+        margin-top: 43px;
+        margin-bottom: 28px;
+        max-width: 511px;
+
+        @include tablet{
+            width: 486px;
+        }
+    }
+
+    &__content{
+        margin-bottom: 40px;
+        max-width: 473px;
+    }
+
+    &__box{
+        width: 547px;
+       margin-left: -194px;
+
+       @include tablet{
+           width: 640px;
+           position: absolute;
+           left: -522px;
+           top: 242px;
+       }
+
+       @include desktop{
+           position: absolute;
+           left: -432px;
+           width: 550px;
+           height: 500px;
+           z-index: 2;
+       }
+    }
+}
+
+.box-marker{
+    display: none;
+
+    @include desktop{
+        position: absolute;
+        display: block;
+        top: -5px;
+        right: -25px;
+        width: 276px;
+        height: 398px;
+        z-index: 0;
+    }
+}
+
+@include tablet{
+
+    .column-l{
+        width: 50%;
+    }
+    
+   .column-r{
+        height: 692px;
+   }
+}

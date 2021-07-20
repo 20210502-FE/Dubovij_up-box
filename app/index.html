@@ -6,11 +6,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>UpBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=DM+Serif+Text&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40bd61653b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+        <div class="backgraund relative"></div>
+        <div class="wrap-content">
+            <a href="/"><img class="logo" src="assets/images/Logo.png" alt="logo"></a>
+        </div>
+        <div class="burger-menu absolute">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn absolute" for="menu-toggle">
+                <span class="burger-menu__line absolute"></span>
+            </label>
+            <nav class="menubox absolute">
+                <ul class="menu-list">
+                    <li><a class="menu-item" href="#">Home</a></li>
+                    <li><a class="menu-item" href="#">About us</a></li>
+                    <li><a class="menu-item" href="#">Blog</a></li>
+                    <li><a class="menu-item" href="#">Articles</a></li>
+                    <li><a class="menu-item" href="#">Contacts</a></li>
+                    <li><a class="menu-item  btn-bordr_black" href="#">LOG IN ></a></li>
+                </ul>
+            </nav>
 
+        </div>
+    </header>
+
+    <main>
+
+        <section class="house relative">
+            <div class="wrap-content flex  flex__space-between flex__wrap">
+                <div class="column-l">
+                    <h1 class="title house__title">Look good without
+                        leaving your house.</h1>
+                    <div class="house__content content">
+                        Upbox is the easiest way to look your best without having to hunt for the perfect makeup
+                        combination.
+                        Our stylists curate the latest trends and send them directly to your door every month.
+                    </div>
+                    <a href="#" class="btn-bordr">SIGN UP ></a>
+                </div>
+                <div class="column-r relative">
+                    <img src="assets/images/box.png" alt="box" class="box house__box">
+                    <img src="assets/images/Marker.png" alt="box" class="box-marker house__box-marker">
+                </div>
+            </div>
+        </section>
+
+        <section class="plan">
+            <h2 class="subtitle plan__subtitle relative">Pick your plan</h2>
+            <div class="box flex flex__wrap flex__space-around">
+
+                <div class="box__wrap flex flex__space-around flex__wrap">
+                    <div class="box__column box__column_blue">
+                        <h3 class="box__title">Monthly</h3>
+                        <div class="box__cost">$18/mo</div>
+                        <a href="#" class="btn-backgraund">FIND YOUR BOX</a>
+                    </div>
+                    <div class="box__column box__column_green">
+                        <h3 class="box__title">Yearly</h3>
+                        <div class="box__cost">$15/mo</div>
+                        <a href="#" class="btn-backgraund">FIND YOUR BOX</a>
+                    </div>
+                </div>
+                <div class="content content_14 plan__content">Your plan auto-renews at the end of 30 days from the 1st
+                    day you
+                    signed-up.
+                </div>
+            </div>
+            <h2 class="subtitle subtitle_line plan__subtitle relative">How it works?</h2>
+            <div class="works">
+                <div class="works__column flex flex__wrap">
+                    <div class="works__left">
+                        <img src="assets/images/works.png" alt="works" class="works__img">
+                    </div>
+                    <div class="works__right">
+                        <h3 class="inner-title works__inner-title">Setup your profile & preferences</h3>
+                        <div class="inner-content">Once you create an account, you can start to tell us your likes and
+                            dislikes so we can tailor the experience just for you.</div>
+                    </div>
+                </div>
+                <div class="works__column-center flex flex__column flex__align-items-center">
+                    <div class="works__left relative">
+                        <img src="assets/images/works1-1.png" alt="" class="works__img-center2">
+                        <img src="assets/images/works1.png" alt="" class="works__img-center1">
+                        <img src="assets/images/works1-2.png" alt="" class="works__img-center3">
+                        <img src="assets/images/works1-3.png" alt="" class="works__img-center4">
+                    </div>
+                    <div class="works__right works__right-center">
+                        <h3 class="inner-title inner-title_width70  works__inner-title">Review your
+                            custom box</h3>
+                        <div class="inner-content">Once you create an account, you can start to tell us your likes and
+                            dislikes so we can tailor the experience just for you.</div>
+                    </div>
+                </div>
+                <div class="works__column   flex flex__wrap">
+                    <div class="works__left relative">
+                        <img src="assets/images/works2.png" alt="" class="works__img-bottom1">
+                        <img src="assets/images/works2-1.png" alt="" class="works__img-bottom2">
+                        <img src="assets/images/works2-2.png" alt="" class="works__img-bottom3">
+                        <img src="assets/images/works2-21.png" alt="" class="works__img-bottom4">
+                    </div>
+                    <div class="works__right">
+                        <h3 class="inner-title works__inner-title inner-title_width50">Try it on
+                            at home</h3>
+                        <div class="inner-content">Once you create an account, you can start to tell us your
+                            likes and
+                            dislikes so we can tailor the experience just for you.
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-bordr works__btn-bordr">TRY IT FOR YOURSELF ></a>
+            </div>
+        </section>
+
+        <section class="social">
+            <h2 class="title social__title">Social Posts</h2>
+            <div class="pictures flex flex__wrap">
+                <div class="pictures__column">
+                    <div class="pictures__wrap">
+                        <img src="assets/images/post1.png" alt="post" class="pictures__img">
+                        <div class="pictures__content">How to rock the lip look that turns heads</div>
+                    </div>
+                </div>
+                <div class="pictures__column">
+                    <div class="pictures__wrap">
+                        <img src="assets/images/post2.png" alt="post" class="pictures__img">
+                        <div class="pictures__content">Find the perfect shade for the season</div>
+                    </div>
+                </div>
+                <div class="pictures__column">
+                    <div class="pictures__wrap">
+                        <img src="assets/images/post3.png" alt="post" class="pictures__img">
+                        <div class="pictures__content">The 5 eye shadow secrets you never knew</div>
+                    </div>
+                </div>
+                <div class="pictures__column">
+                    <div class="pictures__wrap">
+                        <img src="assets/images/post4.png" alt="post" class="pictures__img">
+                        <div class="pictures__content">The pro-tips for at home hair dying</div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-backgraund btn-backgraund_20 social__btn-backgraund">FOLLOW US ON INSTAGRAM</a>
+        </section>
+
+        <section class="bottom-nav">
+            <div class="container flex flex__space-between">
+                <a href="/"><img class="logo1" src="assets/images/logo1.png" alt="logo"></a>
+                <div class="wrap-icons">
+                    <a target="blanc" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a target="blanc" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                    <a target="blanc" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a target="blanc" href="https://www.snapchat.com/"><i class="fab fa-snapchat-square"></i></a>
+                </div>
+            </div>
+            <div class="contacts-wrap flex flex__wrap flex__space-between">
+                <ul class="contacts__list">
+                    <li><a class="contacts__item-hedding" href="#">UPBOX</a></li>
+                    <li><a class="contacts__item" href="#">Upbox Bag</a></li>
+                    <li><a class="contacts__item" href="#">Upbox Box Platinum</a></li>
+                    <li><a class="contacts__item" href="#">Upbox Box VIP</a></li>
+                    <li><a class="contacts__item" href="#">Deals</a></li>
+                    <li><a class="contacts__item" href="#">Seasonal Items</a></li>
+                    <li><a class="contacts__item" href="#">Upbox Promise</a></li>
+                </ul>
+                <ul class="contacts__list">
+                    <li><a class="contacts__item-hedding" href="#">Product</a></li>
+                    <li><a class="contacts__item" href="#">Get the App</a></li>
+                    <li><a class="contacts__item" href="#">Loyalty Program</a></li>
+                    <li><a class="contacts__item" href="#">Affiliates</a></li>
+                    <li><a class="contacts__item" href="#">Press</a></li>
+                </ul>
+                <ul class="contacts__list">
+                    <li><a class="contacts__item-hedding" href="#">Find Us On</a></li>
+                    <li><a class="contacts__item" href="#">Instagram</a></li>
+                    <li><a class="contacts__item" href="#">Facebook</a></li>
+                    <li><a class="contacts__item" href="#">TikTok</a></li>
+                    <li><a class="contacts__item" href="#">SnapChat</a></li>
+                    <li><a class="contacts__item" href="#">Twitter</a></li>
+                </ul>
+                <ul class="contacts__list  contacts__list_padding">
+                    <li><a class="contacts__item-hedding" href="#">Help</a></li>
+                    <li><a class="contacts__item" href="#">Returns</a></li>
+                    <li><a class="contacts__item" href="#">FAQ</a></li>
+                    <li><a class="contacts__item" href="#">Contact</a></li>
+                    <li><a class="contacts__item" href="#">Community</a></li>
+                    <li><a class="contacts__item" href="#">Videos</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer flex flex__column">
+        <div class="footer__wrap flex flex__wrap">
+            <div class="footer__content">Terms</div>
+            <div class="footer__content">Privacy Policy</div>
+        </div>
+        <div class="footer__content footer__content_12">© 2020 Quest AI. Upbox is a Sample Project and open source
+            design project free for
+            personal
+            and commercial use.</div>
+    </footer>
 </body>
 
 </html>
